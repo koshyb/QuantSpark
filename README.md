@@ -51,7 +51,7 @@ Review the execution plan and enter "yes" to destroy the infrastructure
 
 # Software and Version Specifications
 
-Listed below are the software and their respective versions assumed for this Terraform project. Make sure you have required dependencies installed before proceeding.
+Listed below are the software and their respective versions used for this task. Make sure you have required dependencies installed before proceeding.
 
 - **Terraform:** v1.2.9
   - Terraform is used to define and provision infrastructure in AWS
