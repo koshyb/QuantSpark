@@ -5,9 +5,9 @@ This repository contains Terraform configuration files to deploy an AWS infrastr
 Prerequisites
 Before you begin, ensure you have the following tools and accounts set up:
 
-Terraform 1.2.*
-AWS CLI
-AWS account with the necessary permissions
+- Terraform 1.2.*
+- AWS CLI
+- AWS account with the necessary permissions
 
 ------------------------------------------------------------------------------------------------------------------------------------
 
