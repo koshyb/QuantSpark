@@ -1,4 +1,4 @@
-------AWS Infrastructure Deployment with Terraform-------
+# AWS Infrastructure Deployment with Terraform
 
 This repository contains Terraform configuration files to deploy an AWS infrastructure for hosting a web application. Below are the steps to deploy and destroy the solution.
 
@@ -9,7 +9,9 @@ Terraform 1.2.*
 AWS CLI
 AWS account with the necessary permissions
 
----------Deployment Steps------------
+------------------------------------------------------------------------------------------------------------------------------------
+
+# Deployment Steps
 
 1. Clone the Repository
 
@@ -27,23 +29,25 @@ terraform plan
 4. Deploy the Infrastructure
 
 terraform apply
-# Review the execution plan and enter "yes" to deploy the infrastructure.
+Review the execution plan and enter "yes" to deploy the infrastructure.
 
 5. Access Your Application
 
-# Once the infrastructure is deployed, you can access your application using the provided URLs or IP addresses.
+Once the infrastructure is deployed, you can access your application using the provided URLs or IP addresses.
 
 Public web application: http://<public_web_url>
 Load balancer: http://<load_balancer_url>
 
+------------------------------------------------------------------------------------------------------------------------------------
 
----------Destroying the Infrastructure-----------
+# Destroying the Infrastructure
 
 To destroy the infrastructure, use the following command:
 
 terraform destroy
-# Review the execution plan and enter "yes" to destroy the infrastructure.
+Review the execution plan and enter "yes" to destroy the infrastructure
 
+--------------------------------------------------------------------------------------------------------------------------------------
 
 # Software and Version Specifications
 
@@ -65,9 +69,12 @@ Listed below are the software and their respective versions assumed for this Ter
 
 - **AWS Region:** eu-west-2 (This configuration assumes the AWS region is set to eu-west-2. Modify it if using a different region.)
 
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
 # NOTES
 
------Design choices (Thought process)----------
+# Design choices (Thought process)
 
 High Availability: Desiging the infrastructure for high availability, which means that the application should continue to run even if there failures. Such as Auto Scaling Groups and Elastic Load Balancers.
 
@@ -76,7 +83,7 @@ Multi-Availability Zone: Deploying resources across multiple Availability Zones.
 Scalability: Anticipating increased traffic or load on the application, this design allows for adding more resources to handle this without service disruption.
 
 
------Architecture I chose (Thought process)--------
+# Architecture I chose (Thought process)
 
 Virtual Private Cloud (VPC): Chose to create a VPC which isolates application's network and resources. This enchances security and isolation between other VPCs
 
@@ -91,7 +98,7 @@ Launch Templates: Launch Templates are useful as they provide a consistent confi
 Thoughts on how you would maintain your chosen solution, both for uptime and for new releases of the application:
 
 
------Thoughts on how you would maintain your chosen solution, both for uptime and for new releases of the application----
+# Thoughts on how you would maintain your chosen solution, both for uptime and for new releases of the application
 
 Auto Scaling: Continue to monitor application usage and performance. Set up CloudWatch alarms to trigger scaling actions automatically. This ensures that the system can handle increased traffic without manual intervention.
 
@@ -110,7 +117,7 @@ Implement automated testing and integration pipelines to thoroughly test new rel
 The chosen solution can be easily reused by making adjustments to the configuration files, such as the "main.tf" in our use case. You can deploy the same infrastructure in different regions or environments with minimal modifications. This reusability is a benefit of using Infrastructure as Code (IaC) tools like Terraform.
 
 
--------Improvements--------
+# Improvements
 
 To improve security, I would explore options like using AWS Secrets Manager for managing sensitive application secrets, API Keys etc and AWS Identity and Access Management (IAM) roles for more granular access control. I would also look into AWS Inspector for vulnerbility checking in the entire infrastructure
 
