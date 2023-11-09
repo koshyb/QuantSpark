@@ -29,7 +29,7 @@ terraform plan
 4. Deploy the Infrastructure
 
 terraform apply
-Review the execution plan and enter "yes" to deploy the infrastructure.
+- Review the execution plan and enter "yes" to deploy the infrastructure.
 
 5. Access Your Application
 
@@ -45,7 +45,7 @@ Load balancer: http://<load_balancer_url>
 To destroy the infrastructure, use the following command:
 
 terraform destroy
-Review the execution plan and enter "yes" to destroy the infrastructure
+- Review the execution plan and enter "yes" to destroy the infrastructure
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
