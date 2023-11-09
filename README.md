@@ -54,20 +54,20 @@ Review the execution plan and enter "yes" to destroy the infrastructure
 Listed below are the software and their respective versions used for this task. Make sure you have required dependencies installed before proceeding.
 
 - **Terraform:** v1.2.9
-  - Terraform is used to define and provision infrastructure in AWS
+  - An IaC tool which is used to define and manage infrastructure as code
 
 - **AWS CLI:** v2.13.32
-  - The AWS Command Line Interface is used for interacting with your AWS resources
+  - The AWS Command Line Interface used for interacting with AWS resources
 
 - **Visual Studio Code:** v1.84.1
-  - Visual Studio Code is the recommended code editor for working with Terraform configuration files
+  - Code editor used for working with Terraform configuration files
 
 - **Operating System:** (Compatible with Windows, macOS, and Linux)
 
 - **AWS Account:**
   - You must have an AWS account with appropriate permissions and access keys configured.
 
-- **AWS Region:** eu-west-2 (This configuration assumes the AWS region is set to eu-west-2. Modify it if using a different region.)
+- **AWS Region:** eu-west-2 (This configuration is set to use eu-west-2)
 
 
 ---------------------------------------------------------------------------------------------------------------------------------------
